@@ -1,8 +1,8 @@
 import cv2
 
 video = cv2.VideoCapture(0)
-faceCascade = cv2.CascadeClassifier("dataset/haarcascade_frontalface_default.xml")
-smileCascade = cv2.CascadeClassifier("dataset/haarcascade_smile.xml")
+faceCascade = cv2.CascadeClassifier("haarcascade_frontalface_default.xml")
+smileCascade = cv2.CascadeClassifier("haarcascade_smile.xml")
 
 while True:
     success,img = video.read()
